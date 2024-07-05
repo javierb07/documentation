@@ -1,18 +1,16 @@
-#include <iostream>
+// Single Responsibility Principle
+
 #include <fstream>
+#include <iostream>
 #include <string>
 #include <vector>
 using namespace std;
 
-struct Journal
-{
+struct Journal {
   string title;
   vector<string> entries;
 
-  explicit Journal(const string &title)
-      : title{title}
-  {
-  }
+  explicit Journal(const string &title) : title{title} {}
 
   void add(const string &entry);
 
@@ -20,31 +18,24 @@ struct Journal
   void save(const string &filename);
 };
 
-void Journal::add(const string &entry)
-{
+void Journal::add(const string &entry) {
   static int count = 1;
   entries.push_back(std::to_string(count++) + ": " + entry);
 }
 
-void Journal::save(const string &filename)
-{
+void Journal::save(const string &filename) {
   ofstream ofs(filename);
-  for (auto &s : entries)
-    ofs << s << endl;
+  for (auto &s : entries) ofs << s << endl;
 }
 
-struct PersistenceManager
-{
-  static void save(const Journal &j, const string &filename)
-  {
+struct PersistenceManager {
+  static void save(const Journal &j, const string &filename) {
     ofstream ofs(filename);
-    for (auto &s : j.entries)
-      ofs << s << endl;
+    for (auto &s : j.entries) ofs << s << endl;
   }
 };
 
-int main()
-{
+int main() {
   Journal journal{"Dear Diary"};
   journal.add("I ate a bug");
   journal.add("I cried today");
