@@ -69,5 +69,6 @@
     "variant": "cpp",
     "xhash": "cpp",
     "xtree": "cpp"
-  }
+  },
+  "cSpell.words": ["Multiton"]
 }
