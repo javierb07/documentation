@@ -11,17 +11,17 @@ This approach makes it flexible to add and remove options from the car.
 
 ## Motivation
 
-* Some objects are simple and can be created in a single constructor call.
-* Other objects require a lot of ceremony to create.
-* Having an object with 10 constructor arguments is not productive.
-* Instead, opt for piecewise construction.
-* Builder provides an API for constructing an object step-by-step.
+- Some objects are simple and can be created in a single constructor call.
+- Other objects require a lot of ceremony to create.
+- Having an object with 10 constructor arguments is not productive.
+- Instead, opt for piecewise construction.
+- Builder provides an API for constructing an object step-by-step.
 
 ## Summary
 
-* A builder is a separate component for building an object for when object construction gets too complicated.
-* Can create mutually cooperating sub-builders.
-* Can either give builder a constructor or return it via a static function.
-* Often has a fluent interface. To make a builder fluent, return this.
-* Different facets of an object can be built with different builders working in tandem via a base class.
-* Sometimes creational patterns are complementary: Builder can use one of the other patterns to implement which components are built.
+- A builder is a separate component for building an object for when object construction gets too complicated.
+- Can create mutually cooperating sub-builders.
+- Can either give builder a constructor or return it via a static function.
+- Often has a fluent interface. To make a builder fluent, return this.
+- Different facets of an object can be built with different builders working in tandem via a base class.
+- Sometimes creational patterns are complementary: Builder can use one of the other patterns to implement which components are built.

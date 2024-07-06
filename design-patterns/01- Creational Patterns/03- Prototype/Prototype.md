@@ -12,16 +12,16 @@ Mitotic cell division, which results in two identical cells, is an example of th
 
 ## Motivation
 
-* Complicated objects (e.g., cars) aren't designed from scratch, they reiterate existing designs.
-* An existing (partially or fully constructed) design is a Prototype.
-* We make a copy (clone) of the prototype and customize it (requires 'deep copy' support).
-* We make the cloning convenient (e.g., via a Factory)
+- Complicated objects (e.g., cars) aren't designed from scratch, they reiterate existing designs.
+- An existing (partially or fully constructed) design is a Prototype.
+- We make a copy (clone) of the prototype and customize it (requires 'deep copy' support).
+- We make the cloning convenient (e.g., via a Factory)
 
 ## Summary
 
-* Creation of object from an existing object.
-* To implement a prototype, partially construct an object and store it somewhere.
-* Clone the prototype:
-    * Implement your own deep copy functionality or;
-    * Serialize and deserialize.
-* Customize the resulting instance.
+- Creation of object from an existing object.
+- To implement a prototype, partially construct an object and store it somewhere.
+- Clone the prototype:
+  - Implement your own deep copy functionality or;
+  - Serialize and deserialize.
+- Customize the resulting instance.

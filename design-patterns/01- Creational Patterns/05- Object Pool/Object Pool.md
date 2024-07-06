@@ -1,6 +1,6 @@
 # Object Pool
 
-The Object Pool design pattern is useful when it is necessary to work with a large number of objects that are particularly expensive to instantiate, especially if each object is only needed for a short period of time. 
+The Object Pool design pattern is useful when it is necessary to work with a large number of objects that are particularly expensive to instantiate, especially if each object is only needed for a short period of time.
 
 Instead of creating and destroying the expensive objects, the object pool pattern suggests reusing the already created objects.
 
