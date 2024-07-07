@@ -68,7 +68,9 @@
     "unordered_map": "cpp",
     "variant": "cpp",
     "xhash": "cpp",
-    "xtree": "cpp"
+    "xtree": "cpp",
+    "numeric": "cpp",
+    "array": "cpp"
   },
   "cSpell.words": ["Multiton", "pimpl", "Rasterizing"]
 }
